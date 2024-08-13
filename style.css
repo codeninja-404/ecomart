@@ -298,8 +298,8 @@ body {
   background-image: url(img/banner/b2.jpg);
   background-size: cover;
   background-position: center;
-  pxheight: 40oh;
-  weight: 100%;
+
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,4 +324,65 @@ body {
 #banner button:hover {
   background-color: #00874a;
   color: #ffffff;
+}
+
+/* small  banner styles */
+#sm-banner {
+  display: flex;
+  margin: 0 auto;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+  background-image: url(img/banner/b17.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  min-width: 580px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  margin: 0 auto;
+}
+#sm-banner .banner-box:nth-child(2) {
+  background-image: url(img/banner/b18.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  min-width: 580px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  margin: 0 auto;
+}
+#sm-banner .banner-box span {
+  padding: 10px 0;
+  color: #ff4500; /* Orange Red */
+}
+#sm-banner .banner-box h4 {
+  padding: 10px 0;
+  color: #333333; /* Dark Gray */
+}
+#sm-banner .banner-box h2 {
+  padding: 10px 0;
+  color: #006e18; /* Gold */
+}
+#sm-banner .banner-box:nth-child(2) span {
+  color: #800000; /* Maroon */
+}
+#sm-banner .banner-box:nth-child(2) h4 {
+  color: #2f4f4f; /* Dark Slate Gray */
+}
+#sm-banner .banner-box:nth-child(2) h2 {
+  color: #4b0082; /* Indigo */
 }
