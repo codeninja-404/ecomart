@@ -540,6 +540,41 @@ footer .copyright {
   text-align: center;
 }
 
+/* shop page styles */
+#page-header {
+  background-image: url("img/banner/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+}
+#page-header h2,
+#page-header p {
+  color: #ffffff;
+}
+#pagination {
+  text-align: center;
+}
+#pagination a {
+  text-decoration: none;
+  background-color: #141414;
+  box-shadow: 5px 5px 24px rgba(0, 0, 0, 0.362);
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: 0.6s ease;
+}
+#pagination a:hover {
+  box-shadow: 5px 5px 24px rgba(0, 0, 0, 0.8);
+}
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 /* media query */
 
 @media (max-width: 799px) {
