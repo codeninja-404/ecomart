@@ -792,6 +792,10 @@ p {
   #prodetails .single-pro-details {
     width: 100%;
   }
+  /* bloge page styles */
+  #blog {
+    padding: 100px 50px 0 50px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -835,5 +839,23 @@ p {
 
   #sm-banner .banner-box span {
     font-size: 15px;
+  }
+  /* bloge page styles */
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  #blog .blog-details {
+    width: 100%;
   }
 }
