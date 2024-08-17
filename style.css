@@ -737,6 +737,109 @@ p {
   height: 100%;
   border-radius: 20px;
 }
+
+/* contact page styles */
+#contact-details {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact-details .details {
+  width: 40%;
+}
+#contact-details .details span,
+#form-details form span {
+  font-size: 12px;
+}
+#contact-details .details h2,
+#form-details form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
+#contact-details .details li p {
+  font-size: 14px;
+  margin: 0;
+}
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+#form-details {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #eeeeee5e;
+  background-color: #13111163;
+}
+#form-details form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+#form-details form input,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: #141414;
+  color: #fff;
+}
+#form-details form button {
+  font-size: 14px;
+  width: 200px;
+}
+#form-details form button:hover {
+  background-color: #00f67f;
+  color: #ffffff;
+}
+
+#form-details .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+#form-details .people div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+#form-details .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+#form-details .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #9e9e9e;
+}
 /* media query */
 
 @media (max-width: 799px) {
@@ -834,6 +937,16 @@ p {
   #blog {
     padding: 100px 50px 0 50px;
   }
+  /* contact us page styles */
+  #form-details {
+    flex-direction: column-reverse;
+
+    padding: 50px 20px;
+  }
+
+  #form-details form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -918,5 +1031,17 @@ p {
     width: 100%;
     height: 100%;
     margin: 20px auto 0 auto;
+  }
+  /* contact page styles */
+  #contact-details {
+    flex-direction: column-reverse;
+  }
+  #contact-details .map {
+    width: 100%;
+    height: 400px;
+    padding: 20px 0;
+  }
+  #contact-details .details {
+    width: 100%;
   }
 }
